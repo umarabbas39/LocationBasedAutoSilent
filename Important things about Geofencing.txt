@@ -1,0 +1,7 @@
+You need to reregister geofencing in following scenerios
+The device is rebooted. The app should listen for the device's boot complete action, and then re- register the geofences required.
+The app is uninstalled and re-installed.
+The app's data is cleared.
+Google Play services data is cleared.
+The app has received a GEOFENCE_NOT_AVAILABLE alert. This typically happens after NLP (Android's Network Location Provider) is disabled.
+I used work manager to repeatidly reregister geofences
